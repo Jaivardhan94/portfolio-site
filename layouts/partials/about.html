@@ -1,0 +1,48 @@
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="mr-auto">
+
+              <h2 class="mb-0">{{ .Site.Params.firstName }}
+                <span class="text-primary">{{ .Site.Params.lastName }}</span>
+              </h2>
+              <div class="subheading mb-5">{{ .Site.Params.address }} ·
+                <a href="mailto:{{ substr .Site.Params.email 0 5}}-remove-{{ substr .Site.Params.email 5 }}">{{ substr .Site.Params.email 0 5}}<span style="display:none">-remove-</span>{{ substr .Site.Params.email 5 }}</a>
+              </div>
+
+            </div>
+
+            {{ if .Site.Params.showQr }}
+              {{ partial "contact-qr" . }}
+            {{ end }}
+        </div>
+              <h4 class="resume-date"> I have always been intrigued by the story- and it's impact- held within numbers and data. After graduation from the Indian Institute of Technology, I worked as an analyst for Aspect Ratio. In the role, I handled business strategy development for one of the biggest  players in global pharmaceutical industry. This experience not only made me aware of the prodigal financial impact of data driven analytics, but also sparked an interest to explore various methodologies that can be applied to employ data driven business strategies in various industries.
+
+              <br><br>
+
+              Following my passion to build a meaningful story from data, I am currently pursuing a Masters of Science in Business Analytics at McCombs Business School, UT Austin. The diverse course structure, along with hands-on projects with global firms has exposed me to the immense opportunities that lie within data analytics.
+
+               <br><br>
+               
+              Exploring new places, meditation and spiritual reading are some things that are very close to me. Feel free to connect on any of the platforms linked below.
+             
+              </h4>
+        <div>
+          {{ .Content }}
+          <ul class="list-inline list-social-icons mb-0">
+            {{ range .Site.Params.handles }}
+                <li class="list-inline-item">
+                  <a href="{{ .link }}" data-toggle="tooltip" title="{{ .name }}" data-offset="0 10" rel="me">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab {{ if .icon}}fa-{{ .icon }}{{ else }}fa-{{ lower .name }}{{ end }} fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </section>

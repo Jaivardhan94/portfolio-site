@@ -1,0 +1,48 @@
+baseURL = "https://jaivardhan94.github.io/"
+languageCode = "en-us"
+title = "Sayesha Aravapalli"
+theme = "hugo-resume"
+publishDir = "jaivardhan94.github.io"
+[params]
+    firstName = "Sayesha"
+    lastName = "Aravapalli"
+    address = "Austin, TX"
+    phone = "1-512-905-1548"
+    contactNote = "Maters of Science in Business Analytics, UT Austin"
+    profileImage = "img/TechChat.png"
+    email = "sayesha.100@gmail.com"
+    description = "Masters student at McCombs School of Business, UT Austin with an experience in analytics in the pharmeceutical industry."
+    favicon = "/favicon.ico"
+    # what sections
+    showSkills = true
+    showProjects = true
+    showOpenSource = false
+    showPublications = false
+    showExperience = true
+    showEducation = true
+
+    showQr = false
+
+[[params.handles]]
+    name = "LinkedIn"
+    link = "https://www.linkedin.com/in/sayesha-aravapalli/"
+
+
+[[params.handles]]
+    name = "Facebook"
+    link = "https://www.facebook.com/sayesha.aravapalli"
+
+
+[[params.handles]]
+    name = "GitHub"
+    link = "https://github.com/asayesha/"
+
+[[params.handles]]
+    name = "Medium"
+    link = "https://www.facebook.com/sayesha.aravapalli"
+
+
+
+[params.google.analytics]
+    trackerID = "XX-123446-01"
+
